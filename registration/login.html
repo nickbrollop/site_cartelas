@@ -1,0 +1,39 @@
+
+{%load static%}
+{%extends”base.html”%}
+{%blockcontent%}
+    if form.errors
+        <p>Your username and password didnt match .Please try again.</ p>
+    end if
+
+if next
+    if user.isauthenticated
+        <p>Your account  doesnt have access to thispage. To proceed, pleaselogin with an account that has access .</ p>
+    else
+        <p>Please login to see this page .</ p>
+    end if
+end if 
+
+<form method=”post”action”{%url’login’ %}”>
+    {% csrftoken%}
+    <table>
+        <tr>
+            <td>{{form.username.labeltag}}</td>
+            <td>{{form.username}}</td>
+        </tr>
+        <tr>
+            <td>{{form.password.labeltag }}</td>
+2/3
+            <td>{{form.password }}</td>
+        </tr>
+    </table>
+    <input type=”submit”value=”login” />
+    <input type=”hidden” name=” n e x t ” v al u e=” {{ n e x t }} ” />
+</ form>
+
+{# Assumes you s e t u p t h e p a s s w o r d r e s e t view i n your URLconf #}
+<p><a h r e f =”{% u r l ’ p a s s w o r d r e s e t ’ %}”>Lo st password ?</ a></ p>
+
+    {% e n d b l o c k %}
+
+
