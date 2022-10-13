@@ -4,10 +4,10 @@ from django.db import models
 
 class material(models.Model):
     cod_material = models.IntegerField
-    parte_recicl = models.CharField(20)
-    descricao = models.CharField(100)
+    parte_recicl = models.CharField(max_length = 20)
+    descricao = models.CharField(max_length = 100)
 
 class tipo_Material(models.Model):
     cod_tipo  = models.IntegerField
-    descricao_tipo = models.CharField(100)
+    descricao_tipo = models.CharField(max_length = 100)
     
