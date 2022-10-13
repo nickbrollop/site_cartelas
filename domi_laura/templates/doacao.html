@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recanto da Compaixão Frei Salvador</title>
+    <link rel="icon" type = "imagem/x-icon" href="https://scontent.fpoa5-1.fna.fbcdn.net/v/t1.6435-9/96045353_103426101368342_4074233619395117056_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=tIf6PSX3DnoAX-8qqb0&_nc_ht=scontent.fpoa5-1.fna&oh=00_AT8DNtz8-JPr8Fqhglza-MNcHvnkLCy7oQb-LFlyVcgX_A&oe=62E1773E">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="C:\Users\nbpolita\site_cartelas\templates\static\CSS\CSS\style.css" rel="stylesheet">
+  </head>
+  <body>
+    <body class="body" style="background-color:#57b175;">
+
+      <nav class="navbar navbar-expand-lg" style="background-color:#227c40;"  >
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#"><home_page class="html"></home_page></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" id="menupar" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu" >
+              <li class="nav-item" >
+                <a class="nav-link active" aria-current="page" style="color:#ffffff" href="{% url 'pagina_inicial' %}">Página Inicial</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style="color:#ffffff" href="{% url 'quem_somos' %}">Quem Somos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style="color:#ffffff" href="{% url 'doacao' %}">Doações</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style="color:#ffffff" href="{% url 'informacional' %}">Informacional</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style="color:#ffffff" href="{% url 'contato' %}">Contato</a>
+              </li>
+            
+            </ul>
+            <nav class="navbar ">
+              <div class="container"> 
+                <a class="navbar-brand" href="#">
+                  <img src="https://i.pinimg.com/originals/0a/cd/17/0acd176792c4e25691bba31efe7cd95f.jpg" alt="" width="90" height="80">
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </nav>
+
+    </br>
+    </br>
+    
+    <div style="color:#000000" >
+      <center>
+        <h1> ENCONTRE AQUI OS LOCAIS DE DOAÇÃO MAIS PRÓXIMOS DE VOCÊ! </h1>
+        <div>
+          <img src="https://i.pinimg.com/originals/c3/4d/43/c34d43f74b2fd477e270470848dfed68.png" alt="" width="50" height="50">
+        </div>
+      </center>
+    </div>
+
+    </br>
+    </br>
+    </br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <center>
+          <select class="form-select" aria-label="Disabled select example" width="100" >
+            <option selected> Selecione o material desejado...</option>
+            <option value="1"> Cartelas de Remédio </option>
+            <option value="2"> Tampinhas de Plástico </option>
+            <option value="3"> Pilhas / Baterias </option>
+          </select>
+
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+
+          <select class="form-select" aria-label="Disabled select example" width="100">
+            <option selected> Selecione a cidade de coleta... </option>
+            <option value="1"> Caxias do Sul - RS </option>
+            <option value="2"> Garibaldi - RS </option>
+            <option value="3"> Flores da Cunha - RS </option>
+            <option value="4"> Farroupilha - RS </option>
+            <option value="5"> Antônio Prado - RS </option>
+          </select>
+        </center>
+        </div>
+
+        <div class="col">
+          <center>
+          <div>
+            <center>
+              <P> ENDEREÇO 1: </P>
+              <P> HORÁRIO DE FUNCIONAMENTO: 00H ÀS 00H </P>
+            </center>
+          </div>
+          </center>
+
+          <center>
+          <div>
+            <center>
+              <P> ENDEREÇO 1: </P>
+              <P> HORÁRIO DE FUNCIONAMENTO: 00H ÀS 00H </P>
+            </center>
+          </div>
+          </center>
+        </div>
+      </div>
+
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+
+    <footer style="background-color:#227c40;"> <!-- RODAPÉ -->
+
+        <div class="container"> <!-- COLUNA REDES SOCIAIS -->
+          </br>
+            <div class="row" class="centralizar">
+              <div class="col centralizar" class="centralizar">
+                <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                  <center>
+                  <div>
+                    <span style="color:#ffffff"> NOS ENCONTRE NAS REDES SOCIAS! </span>
+                  </div>
+                    </br>
+                      
+                  <div>
+                    <a href= "https://www.instagram.com/recantodacompaixao" > 
+                      <button type="button" class="btn btn-dark"> INSTAGRAM </button>
+                    </a>
+                  </div>
+                  </br>
+      
+                  <div>
+                    <a href= "https://www.facebook.com/recantofreisalvador/" > 
+                      <button type="button" class="btn btn-dark"> FACEBOOK </button>
+                    </a>
+                  </div>
+                    </br>
+      
+                    <div>
+                      <a href= "https://api.whatsapp.com/send?phone=5554984100101&text=Tenho%20Interesse%20em%20realizar%20uma%20doacao" > 
+                        <button type="button" class="btn btn-dark"> WHATSAPP </button>
+                      </a>
+                    </div>
+                    </center>
+                    </br>
+                  </div>
+                  </br>
+                </div>
+            
+                <div class="col centralizar"> <!-- COLUNA LOGO + LINK SITE EXTRA -->
+                  </br>
+                  <center>
+                    <div class="card" style="width: 18rem; background: #57b175;">
+                      <img class="card-img-top" src="https://i.pinimg.com/originals/0a/cd/17/0acd176792c4e25691bba31efe7cd95f.jpg" alt="Imagem de capa do card">
+                        <div class="card-body">
+                          <a href="https://a.mylink.ee/recantodacompaixao" class="btn btn-primary"> SAIBA MAIS SOBRE O PROJETO </a>
+                        </div>
+                    </div>
+                    </br>
+                    </center>
+                </div>
+      
+                <div class="col centralizar" class="centralizar"> <!-- COLUNA NAVEGAR PÁGINAS -->
+                  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                    <center>
+                      <div>
+                          <span style="color:#ffffff"> VISITE MAIS PÁGINAS DO SITE! </span>
+                      </div>
+                    </br>
+                        
+                    <div>
+                      <button type="button" class="btn btn-dark"> QUEM SOMOS 
+                        <a href= {% url 'quem_somos' %} > </a>
+                      </button>
+                    </div>
+                    </br>
+                        
+                    <div>
+                      <button type="button" class="btn btn-dark"> PÁGINA INICIAL
+                        <a href= {% url 'pagina_inicial' %} > </a>
+                      </button>
+                    </div>
+                    </br>
+                        
+                    <div>
+                      <button type="button" class="btn btn-dark"> INFORMACIONAL
+                        <a href= {% url 'informacional' %} > </a>
+                      </button>
+                    </div>
+                    </br>
+      
+                    <div>
+                      <button type="button" class="btn btn-dark"> CONTATO
+                        <a href= {% url 'contato' %} > </a>
+                      </button>
+                    </div>
+                      
+                    </center>
+                      </br>
+                  </div>
+                      </br>
+                      </center>
+                </div>
+      
+                <div class="centralizar" style="color: #ffffff"> <!-- ASSINATURA FINAL DA PÁGINA -->
+                  <center><p> Recanto da Compaixão Frei Salvador | 2022 </p></center>
+                </div>
+      
+      </footer>
+    
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      </body>
+    </html>
