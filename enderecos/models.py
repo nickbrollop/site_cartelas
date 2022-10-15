@@ -9,9 +9,12 @@ class loc_Entrega(models.Model):
     horario = models.TimeField()
     endereco = models.CharField(max_length = 100)
     descricao_local = models.CharField(max_length = 100)
+    def __srt__(self):
+        return self.endereço
     
 class cidades(models.Model):
     cod_cid = models.IntegerField
-    endereco = models.CharField(max_length = 100)
-    cep = models.CharField(max_length = 8)
+    cidade = models.CharField(max_length = 100)
     descricao_cidade = models.CharField(max_length = 100)
+    def __srt__(self):
+        return self.cidade
