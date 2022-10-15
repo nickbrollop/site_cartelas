@@ -71,7 +71,7 @@
       <div class="row">
         <div class="col selector">
           <center>
-            <form>
+            
             <center>
             </br>
               {% for field in form %}
@@ -89,6 +89,8 @@
         
 
             </br>
+            <form action="/RecandoDaCompaixao/Doacao/" method="post">
+              {% csrf_token %}
               <button type="submit">Buscar</button>
             </form>
           </center>

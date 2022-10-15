@@ -21,11 +21,10 @@ class EnderecosView(View):
         return render(request, self.template_name, {'form': form})
     
     def post(self, request, *args, **kwargs):
-        
+        import ipdb; ipdb.set_trace()
         form = self.form_class(request.POST)
-        print(form)
-        cidade = self.form.cleaned_data['select_cidade']
-        material = self.form.cleaned_data['select_material']
+        cidade = form.cleaned_data['select_cidade']
+        material = form.cleaned_data['select_material']
         
         locais = loc_Entrega.objects.filter(loc_Entrega_cidade = cidade)
 
