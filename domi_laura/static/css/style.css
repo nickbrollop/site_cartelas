@@ -32,3 +32,8 @@ body {
 .quem_somos{
   margin: 120px;
 }
+
+.selector select{
+  text-align: center;
+  font-size: 20px;
+}

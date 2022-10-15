@@ -2,6 +2,13 @@ from django.db import models
 
 # Create your models here.
 
+class cidades(models.Model):
+    cod_cid = models.IntegerField
+    cidade = models.CharField(max_length = 100)
+    descricao_cidade = models.CharField(max_length = 100)
+    def __str__(self):
+        return self.cidade
+    
 class loc_Entrega(models.Model):
     cod_ent = models.IntegerField
     local = models.CharField(max_length = 50)
@@ -9,12 +16,7 @@ class loc_Entrega(models.Model):
     horario = models.TimeField()
     endereco = models.CharField(max_length = 100)
     descricao_local = models.CharField(max_length = 100)
-    def __srt__(self):
-        return self.endereço
+    loc_Entrega_cidade = models.ForeignKey(cidades, on_delete=models.SET_NULL, null = True)
+    def __str__(self):
+        return self.local
     
-class cidades(models.Model):
-    cod_cid = models.IntegerField
-    cidade = models.CharField(max_length = 100)
-    descricao_cidade = models.CharField(max_length = 100)
-    def __srt__(self):
-        return self.cidade

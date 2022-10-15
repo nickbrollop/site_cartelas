@@ -69,53 +69,43 @@
 
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col selector">
           <center>
-          <select class="form-select" aria-label="Disabled select example" width="100" >
-            <option selected> Selecione o material desejado...</option>
-            <option value="1"> Cartelas de Remédio </option>
-            <option value="2"> Tampinhas de Plástico </option>
-            <option value="3"> Pilhas / Baterias </option>
-          </select>
+            <form>
+            <center>
+            </br>
+              {% for field in form %}
+              </br>
+              </br>
+              </br>
+                {{ field.label_tag }}
+                {{ field }}
+              </br>
+              </br>
+              </br>
+              {% endfor %}
+            </center>
 
-          </br>
-          </br>
-          </br>
-          </br>
-          </br>
-          </br>
+        
 
-          <select class="form-select" aria-label="Disabled select example" width="100">
-            <option selected> Selecione a cidade de coleta... </option>
-            <option value="1"> Caxias do Sul - RS </option>
-            <option value="2"> Garibaldi - RS </option>
-            <option value="3"> Flores da Cunha - RS </option>
-            <option value="4"> Farroupilha - RS </option>
-            <option value="5"> Antônio Prado - RS </option>
-          </select>
-        </center>
-        </div>
+            </br>
+              <button type="submit">Buscar</button>
+            </form>
+          </center>
+          </div>
+         
 
         <div class="col">
           <center>
           <div>
             <center>
               <P> ENDEREÇO 1: </P>
-              <P> HORÁRIO DE FUNCIONAMENTO: 00H ÀS 00H </P>
             </center>
-          </div>
-          </center>
-
-          <center>
-          <div>
-            <center>
-              <P> ENDEREÇO 1: </P>
-              <P> HORÁRIO DE FUNCIONAMENTO: 00H ÀS 00H </P>
-            </center>
-          </div>
-          </center>
+    
+            {{enderecos}}
         </div>
       </div>
+    </div>
 
     </br>
     </br>

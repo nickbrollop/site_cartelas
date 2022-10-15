@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
+from enderecos.views import EnderecosView
  
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -10,7 +11,7 @@ urlpatterns = [
     path ('RecandoDaCompaixao/QuemSomos/', TemplateView.as_view( template_name ='quem_somos.html'), name='quem_somos'),
     path ('RecandoDaCompaixao/Contato/', TemplateView.as_view( template_name ='contato.html'), name='contato' ),
     path ('RecandoDaCompaixao/Informacional/', TemplateView.as_view( template_name ='informacional.html'), name='informacional' ),
-    path ('RecandoDaCompaixao/Doacao/', TemplateView.as_view( template_name ='doacao.html'), name='doacao' ),
+    path ('RecandoDaCompaixao/Doacao/', EnderecosView.as_view(), name='doacao' ),
     #path ('/contato/', ContatoView.as_view() )
 ]
 
