@@ -69,7 +69,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col selector">
+        <div class="col selector form_conf">
           <center>
             <form action="/RecandoDaCompaixao/Doacao/" method="post">
             <center>
@@ -96,9 +96,9 @@
           </div>
          
 
-        <div class="col">
+        <div class="col form_conf">
           <center>
-          <div>
+          <div class="form_conf">
             {% for endereco in enderecos %}
                   <p> <b>Local:</b> {{ endereco.local }} </br>
                   <b>Telefone:</b> {{ endereco.tel }} </br>
