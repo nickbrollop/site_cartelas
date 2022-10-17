@@ -99,16 +99,15 @@
         <div class="col">
           <center>
           <div>
-    
-            {{enderecos}}
-
             {% for endereco in enderecos %}
-                  {{ endereco.local }} 
-                  {{ endereco.tel }}
-                  {{ endereco.descricao_local }}
-                  {{ endereco.endereco}}
+                  <p> <b>Local:</b> {{ endereco.local }} </br>
+                  <b>Telefone:</b> {{ endereco.tel }} </br>
+                  <b>Horário:</b> {{ endereco.descricao_local }} </br>
+                  <b>Endereço:</b> {{ endereco.endereco}} </p>
+                </br>
             {% endfor %}
-        </div>
+          </div>
+          </center>
       </div>
     </div>
 
