@@ -71,7 +71,7 @@
       <div class="row">
         <div class="col selector">
           <center>
-            
+            <form action="/RecandoDaCompaixao/Doacao/" method="post">
             <center>
             </br>
               {% for field in form %}
@@ -87,9 +87,8 @@
             </center>
 
         
-
             </br>
-            <form action="/RecandoDaCompaixao/Doacao/" method="post">
+            
               {% csrf_token %}
               <button type="submit">Buscar</button>
             </form>
@@ -105,6 +104,13 @@
             </center>
     
             {{enderecos}}
+
+            {% for endereco in enderecos %}
+                  {{ endereco.local }} 
+                  {{ endereco.tel }}
+                  {{ endereco.descricao_local }}
+                  {{ endereco.endereco}}
+            {% endfor %}
         </div>
       </div>
     </div>
@@ -177,28 +183,28 @@
                         
                     <div>
                       <button type="button" class="btn btn-dark"> QUEM SOMOS 
-                        <a href= {% url 'quem_somos' %} > </a>
+                        <a href= "{% url 'quem_somos' %}" > </a>
                       </button>
                     </div>
                     </br>
                         
                     <div>
                       <button type="button" class="btn btn-dark"> PÁGINA INICIAL
-                        <a href= {% url 'pagina_inicial' %} > </a>
+                        <a href= "{% url 'pagina_inicial' %}" > </a>
                       </button>
                     </div>
                     </br>
                         
                     <div>
                       <button type="button" class="btn btn-dark"> INFORMACIONAL
-                        <a href= {% url 'informacional' %} > </a>
+                        <a href= "{% url 'informacional' %}" > </a>
                       </button>
                     </div>
                     </br>
       
                     <div>
                       <button type="button" class="btn btn-dark"> CONTATO
-                        <a href= {% url 'contato' %} > </a>
+                        <a href= "{% url 'contato' %}" > </a>
                       </button>
                     </div>
                       
