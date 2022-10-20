@@ -68,23 +68,18 @@
             <h3> DESEJA NOS MANDAR UMA MENSAGEM? </h3>
           </br>
           </div>
-            {% for field in form %}
                 <div class="fieldWrapper input-group flex-nowrap">
-                {{ field.label_tag }} {{ field }}
+                  {% for nome in ContatoForm %}
+                  </br>
+                  {% for telefone in ContatoForm %}
+                  </br>
+                  {% for email in ContatoForm %}
+                  </br>
+                  {% for cidade in ContatoForm %}
+                  </br>
+                  {% for mensagem in ContatoForm %}
+                  {% endfor %}
                 </div>
-            {% endfor %}
-            <!--<div class="input-group flex-nowrap"> <input type="text" class="form-control" placeholder="NOME:" aria-label="NOME:" aria-describedby="addon-wrapping"> </div>
-            </br>
-            <div class="input-group flex-nowrap"> <input type="text" class="form-control" placeholder="TELEFONE:" aria-label="TELEFONE:" aria-describedby="addon-wrapping"> </div>
-            </br>
-            <div class="input-group flex-nowrap"> <input type="text" class="form-control" placeholder="EMAIL:" aria-label="EMAIL:" aria-describedby="addon-wrapping"> </div>
-            </br>
-            <div class="input-group flex-nowrap"> <input type="text" class="form-control" placeholder="CIDADE:" aria-label="CIDADE:" aria-describedby="addon-wrapping"> </div>
-            </br>
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-              <label style="color:#82878b" for="floatingTextarea2"> MENSAGEM: </label>
-            </div>-->
             </br>
             <button type="submit" class="btn btn-primary"> ENVIAR </button>
           </div>
