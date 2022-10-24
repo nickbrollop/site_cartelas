@@ -68,14 +68,19 @@
             <h3> DESEJA NOS MANDAR UMA MENSAGEM? </h3>
           </br>
           </div>
-                <div class="fieldWrapper input-group ">
+          <center>
+                <div class=" fieldWrapper  form_conf ">
+                <center>
                   {% for campo in form %}
                 </br>
-                  {{ campo.label_tag }} </br> {{ campo }}
+                  {{ campo.label_tag }} 
+                  {{ campo }}
                   </br>
                   {% endfor %}
+                </center>
                 </br>
                 </div>
+          </center>
             </br>
             <button type="submit" class="btn btn-primary"> ENVIAR </button>
           </div>
