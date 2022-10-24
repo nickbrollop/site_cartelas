@@ -12,7 +12,3 @@ class ContatoForm(ModelForm):
     class Meta:
         model = contato
         fields = ['nome', 'telefone', 'email', 'cidade', 'mensagem']
-
-'''class contatoForm(forms.Form):
-    select_material = forms.ModelChoiceField(, empty_label = "Selecione o material desejado...", label="")
-    select_cidade = forms.ModelChoiceField(queryset = cidades.objects.all(), empty_label = "Selecione a cidade desejada...", label="")'''

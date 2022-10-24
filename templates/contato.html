@@ -68,17 +68,13 @@
             <h3> DESEJA NOS MANDAR UMA MENSAGEM? </h3>
           </br>
           </div>
-                <div class="fieldWrapper input-group flex-nowrap">
-                  {% for nome in ContatoForm %}
+                <div class="fieldWrapper input-group ">
+                  {% for campo in form %}
+                </br>
+                  {{ campo.label_tag }} </br> {{ campo }}
                   </br>
-                  {% for telefone in ContatoForm %}
-                  </br>
-                  {% for email in ContatoForm %}
-                  </br>
-                  {% for cidade in ContatoForm %}
-                  </br>
-                  {% for mensagem in ContatoForm %}
                   {% endfor %}
+                </br>
                 </div>
             </br>
             <button type="submit" class="btn btn-primary"> ENVIAR </button>

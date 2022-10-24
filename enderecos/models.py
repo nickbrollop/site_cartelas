@@ -23,8 +23,8 @@ class loc_Entrega(models.Model):
 class contato(models.Model):
     nome = models.CharField(max_length = 50)
     telefone = models.CharField(max_length = 13)
-    email = models.EmailField
+    email = models.EmailField()
     cidade = models.CharField(max_length = 100)
-    mensagem = models.TextField
+    mensagem = models.TextField()
     def __str__(self):
         return self.nome

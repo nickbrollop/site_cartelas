@@ -12,7 +12,6 @@ urlpatterns = [
     path ('RecandoDaCompaixao/Contato/', ContatoView.as_view(), name='contato' ),
     path ('RecandoDaCompaixao/Informacional/', TemplateView.as_view( template_name ='informacional.html'), name='informacional' ),
     path ('RecandoDaCompaixao/Doacao/', EnderecosView.as_view(), name='doacao' ),
-    #path ('/contato/', ContatoView.as_view() )
 ]
 
 
