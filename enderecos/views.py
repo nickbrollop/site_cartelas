@@ -9,7 +9,7 @@ from enderecos.models import contato, loc_Entrega
 class ContactFormview(FormView):
     template_name ='contato.html'
     #form_class = ContactForm
-    success_url ="/Obrigada/"
+    success_url ="/contato/"
     
 class EnderecosView(View):
     template_name = 'doacao.html'

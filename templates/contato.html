@@ -69,6 +69,7 @@
           </br>
           </div>
           <center>
+            <form method="post" action="/contato">
                 <div class=" fieldWrapper  form_conf ">
                 <center>
                   {% for campo in form %}
@@ -83,6 +84,7 @@
           </center>
             </br>
             <button type="submit" class="btn btn-primary"> ENVIAR </button>
+          </form>
           </div>
         </div>
       </div>
@@ -149,29 +151,29 @@
                     </br>
                         
                       <div>
-                        <button type="button" class="btn btn-dark"> QUEM SOMOS 
-                          <a href= "{% url 'quem_somos' %}" > </a>
+                        <button type="button" class="btn btn-dark">
+                          <a href= "{% url 'quem_somos' %}" > QUEM SOMOS  </a>
                         </button>
                       </div>
                     </br>
                         
                       <div>
-                        <button type="button" class="btn btn-dark"> DOAÇÃO
-                          <a href= "{% url 'doacao' %}" > </a>
+                        <button type="button" class="btn btn-dark">
+                          <a href= "{% url 'doacao' %}" > DOAÇÃO </a>
                         </button>
                       </div>
                     </br>
                         
                       <div>
-                        <button type="button" class="btn btn-dark"> INFORMACIONAL
-                          <a href= "{% url 'informacional' %}" > </a>
+                        <button type="button" class="btn btn-dark">
+                          <a href= "{% url 'informacional' %}" > INFORMACIONAL </a>
                         </button>
                       </div>
                     </br>
       
                       <div>
-                        <button type="button" class="btn btn-dark"> PÁGINA INICIAL
-                          <a href= "{% url 'pagina_inicial' %}" > </a>
+                        <button type="button" class="btn btn-dark">
+                          <a href= "{% url 'pagina_inicial' %}" > PÁGINA INICIAL </a>
                         </button>
                       </div>
                       
