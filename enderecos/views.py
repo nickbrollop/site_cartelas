@@ -48,6 +48,7 @@ class ContatoView(View):
             contato.objects.create(form)
 
         return render(request, self.template_name, {'form': form})
+
 '''def contact(request):
 	if request.method == 'POST':
 		form = contatoForm(request.POST)
