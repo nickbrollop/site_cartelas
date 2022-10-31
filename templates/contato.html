@@ -70,7 +70,8 @@
           </br>
           </div>
           <center>
-            <form method="post" action="/contato">
+            <form method="post" action="{% url 'contato' %}">
+              {% csrf_token %}
                 <div class=" fieldWrapper  form_conf ">
                 <center>
                   {% for campo in form %}

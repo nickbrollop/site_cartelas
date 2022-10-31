@@ -6,11 +6,6 @@ from django.views.generic.edit import FormView
 from enderecos.models import contato, loc_Entrega
 # Create your views here.
 
-class ContactFormview(FormView):
-    template_name ='contato.html'
-    #form_class = ContactForm
-    success_url ="/contato/"
-    
 class EnderecosView(View):
     template_name = 'doacao.html'
     form_class = doacoesForm
@@ -35,6 +30,7 @@ class EnderecosView(View):
 class ContatoView(View):
     template_name = 'contato.html'
     form_class = ContatoForm
+    sucess_url = 'RecandoDaCompaixao/Contato/'
     
     def get(self, request, *args, **kwargs):
         form = self.form_class()
@@ -45,7 +41,8 @@ class ContatoView(View):
         form = self.form_class(request.POST)
         
         if form.is_valid():
-            contato.objects.create(form)
+            contato.objects.create(nome=form.cleaned_data['nome'], telefone=form.cleaned_data['telefone'], email=form.cleaned_data['email'], cidade=form.cleaned_data['cidade'], mensagem=form.cleaned_data['mensagem'])
+            form = ContatoForm()
 
         return render(request, self.template_name, {'form': form})
 
