@@ -13,5 +13,3 @@ urlpatterns = [
     path ('RecantoDaCompaixao/Informacional/', TemplateView.as_view (template_name ='informacional.html'), name = 'informacional' ),
     path ('RecantoDaCompaixao/Doacao/', EnderecosView.as_view(), name = 'doacao' ),
 ]
-
-
